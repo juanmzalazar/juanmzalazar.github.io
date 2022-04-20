@@ -1,0 +1,44 @@
+*{
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;    
+}
+
+body, main, header, footer {
+    border: 3px red solid;
+    min-height: 50px;
+    min-width: 400px;
+    margin: 0.5rem;
+}
+
+main {
+    min-height: 200px;
+}
+
+main>div {
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 0.5rem;    
+}
+
+main>aside {
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 0.5rem;    
+}
+
+.secciones {
+    min-height: 50px;
+    margin: 0.5rem;
+    border: 2px green solid;    
+}
+
+.secciones article {
+    border: 2px purple solid;
+    margin: 0.5rem;
+    min-height: 20px;
+}
