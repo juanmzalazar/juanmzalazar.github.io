@@ -1,0 +1,105 @@
+<!-- TPO 2022 - JmZ  -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>¡Contactame!</title>
+        <style>
+            * {
+                font-family: Verdana;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="" name="formulario" method="get">
+            Dime como te llamas:
+            <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                maxlength="30"
+                placeholder="Nombre:"
+            />
+
+            <br />
+            <br />
+            Contame algo sobre ti ...
+            <br />
+            <br />
+            <input type="radio" name="sobre_ti" id="estudio" value="Estudio" />
+            Estudio
+            <input type="radio" name="sobre_ti" id="trabajo" value="Trabajo" />
+            Trabajo
+            <input type="radio" name="sobre_ti" id="no_digo" value="No_Digo" />
+            Prefiero no decirlo
+            <br />
+            <br />
+            <div class="contenido-textos">
+                <div class="mb-3">
+                    ¿Algo más que quieras contarme?
+                    <br />
+                    <br />
+                    <label for="mensaje"> </label>
+                    <textarea
+                        id="mensaje"
+                        rows="5"
+                        name="comentarios"
+                        required=""
+                    ></textarea>
+                </div>
+            </div>
+            <br />
+            <input type="checkbox" name="terminos" id="terminos" /> Aceptas los
+            Términos y Condiciones
+            <br />
+            <br />
+            <input type="submit" id="btn" name="btn" value="Enviar" />
+        </form>
+
+        <script>
+            (function () {
+                var formulario = document.getElementsByName("formulario")[0],
+                    elementos = formulario.elements,
+                    boton = document.getElementById("btn");
+
+                var validarNombre = function (e) {
+                    if (formulario.nombre.value == 0) {
+                        alert("Te falto decirme tu nombre");
+                        e.preventDefault();
+                    }
+                };
+
+                var validarRadio = function (e) {
+                    if (
+                        formulario.sobre_ti[0].checked == true ||
+                        formulario.sobre_ti[1].checked == true ||
+                        formulario.sobre_ti[2].checked == true
+                    ) {
+                    } else {
+                        alert(
+                            "Falto que me digas si trabajas, estudias o no haces nada..."
+                        );
+                        e.preventDefault();
+                    }
+                };
+
+                var validarCheckbox = function (e) {
+                    if (formulario.terminos.checked == false) {
+                        alert("Debes aceptar los términos y condiciones");
+                        e.preventDefault();
+                    }
+                };
+
+                var validar = function (e) {
+                    validarNombre(e);
+                    validarRadio(e);
+                    validarCheckbox(e);
+                };
+                formulario.addEventListener("submit", validar);
+            })();
+        </script>
+    </body>
+</html>

@@ -1,75 +1,152 @@
+<!-- TPO 2022 - JmZ  -->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>TPO Desarrollo Web - Zalazar, Juan</title>    
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>TPO Desarrollo Web - Zalazar Juan M</title>
+        <link rel="shortcut icon" href="img/da_vinci.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/estilos.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+            rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <header>
-        <div class="header-logo">
-            <img src="img/pizza_logo.png" alt="">
-        </div>
+    <body>
+        <header>
+            <nav>
+                <a href="#sobre-mi">Quien soy</a>
+                <a href="#video">Mi arte</a>               
+                <a href="#portafolio">Portafolio</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
 
-        <nav class="header-menubar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pizzas.html">Pizzas</a></li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+            <section class="textos-header">
+                <h2>Ciao. Io sono</h2>
+                <h1>Leonardo.</h1>
+            </section>
+        </header>
 
-    <main>
-        <div class="principal">
-            <section class="secciones">
-
-                <article>
-                    <img src="" alt="">
-                    <div>
-                        <h3>Pizza casera con ketchup</h3>
+        <main>
+            <!-- sección SOBRE-MI -->
+            <section class="contenedor sobre-mi" id="sobre-mi">                
+                <h2 class="titulo">Yo, Leonardo</h2>
+                <div class="contenedor-sobre-mi">
+                    <img
+                        src="img/leonardo-da-vinci.jpg"
+                        alt=""
+                        class="imagen-sobre-mi"
+                    />
+                    <div class="contenido-textos">
+                        <br />
+                        
                         <p>
-                            La salsa de tomate suele formar parte de la base de una pizza. Pero... ¿Sabías que en Brasil la pizza se suele comer con ketchup por encima? Pues bien, si los brasileños lo hacen será porque queda buena. Nosotros lo hemos probado y te enseñamos cómo preparar una pizza casera con ketchup, estamos seguros que a ti también te gustará.
+                            Mi nombre es Leonardo di ser Piero da Vinci. Me
+                            considero un sabio renacentista: soy pintor,
+                            anatomista, arquitecto, paleontólogo, artista,
+                            botánico, científico, escritor, escultor, filósofo,
+                            ingeniero, inventor, músico, poeta y urbanista.
                         </p>
-                    </div>
-                </article>
-                
-                <article>
-                    <img src="" alt="">
-                    <div>
-                        <h3>Pizza casera</h3>
+
+                        <h3>Mi formación</h3>
                         <p>
-                            Precalienta el horno a 200°C. Toma los ingredientes secos para la masa y mézclalos en un recipiente amplio.<br> Realiza un hoyo en el centro de los ingredientes e incorpora los ingredientes líquidos a la masa y las especies.<br> Mezcla bien y empieza amasar en el mismo recipiente.<br> Si ves que la masa necesita más agua añade poco a poco más agua.
-                        </p>
+                            Comencé como aprendiz en el taller del maestro
+                            Andrea del Verrocchio. Al cabo de seis años, ya
+                            considerado como artista libre, pude trabajar para
+                            Brunelleschi en la construcción de la esfera de
+                            cobre que corona la iglesia de Santa Maria dei
+                            Fiori.
+                            <br />
+                            A partir de ahí he realizado innumerables obras y
+                            estudios, para personas famosas e influyentes, como
+                            la familia Medici, Ludovico el Moro o Francisco I,
+                            entre otros.
+                        </p>                        
+                        <h3><a href="javascript:history.back()">Volver</a></h3>
                     </div>
-                </article>
-
-            <section class="secciones">
-
+                </div>
             </section>
 
-        </div>
-        <div>
+            <!-- sección VIDEO -->
+            <section class="video" id="video">
+                <h2 class="titulo">Mi arte</h2>
+                <div class="video-maxancho">
+                    <div class="video-contenedor">
+                        <iframe
+                            width="400"
+                            src="https://www.youtube.com/embed/6i9aya7VTE4?autoplay=0"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <br>
+                <div class="contenedor-sobre-mi">                                    
+                    <h3><a href="javascript:history.back()">Volver</a></h3>
+                </div>
+                <br>
+            </section>
 
-        </div>
-        <aside class="contenido-sec">
+            <!-- sección PORTAFOLIO -->
+            <section class="portafolio" id="portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">Mi portafolio</h2>
 
-        </aside>
+                    <div class="galeria-portafolio">
+                        <img class="imagen-portafolio" src="img/img1.jpg" alt="" />
+                        <img class="imagen-portafolio" src="img/img2.jpg" alt="" />
+                        <img class="imagen-portafolio" src="img/img3.jpg" alt="" />
+                        <img class="imagen-portafolio" src="img/img4.jpg" alt="" />
+                        <img class="imagen-portafolio" src="img/img5.jpg" alt="" />
+                        <img class="imagen-portafolio" src="img/img6.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="contenedor-sobre-mi">                                    
+                    <h3><a href="javascript:history.back()">Volver</a></h3>
+                </div>
+                <br>                
+            </section>
+        </main>
 
-    </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h4>Linkedin</h4>
+                    <p>
+                        <a
+                            href="https://www.linkedin.com/in/leonardo-da-vinci-5555555/"
+                            style="color: gray"
+                            >Leo Da Vinci</a
+                        >
+                    </p>
+                </div>
+                <div class="contenido-footer">
+                    <h4>Email</h4>
+                    <p>leonardo@davinci.com</p>
+                </div>
+                <div class="contenido-footer">
+                    <h4>Estudio</h4>
+                    <p>
+                        <a
+                            href="https://goo.gl/maps/iHPzotjH9Hvt1jU7A"
+                            style="color: gray"
+                            >Via del Castellaccio 50121 Firenze, Italia</a
+                        >
+                    </p>  
+                    
+                    
+                </div>
+            </div>
 
-    <footer>
+            <h2 class="titulo-final">
+                &copy; TPO Codo-a-Codo 2022 | Juan M. Zalazar</p>
+            </h2>            
 
-        
-    </footer>    
-
-</body>
-
-
+        </footer>
+    </body>
 </html>
-
